@@ -1,0 +1,8 @@
+:root {
+ --white :  white;
+ --background : #4369b2;
+}
+body {
+ background-color: #4369b2 ;
+ font-family: 'Gill Sans', sans-serif;
+}
