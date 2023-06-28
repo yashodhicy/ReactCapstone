@@ -1,8 +1,11 @@
-:root {
- --white :  white;
- --background : #4369b2;
-}
+
 body {
- background-color: #4369b2 ;
+ background-color: var(--background) ;
  font-family: 'Gill Sans', sans-serif;
+ color: var(--white);
+ text-decoration: none;
+}
+
+#main {
+    height: 100%;
 }
