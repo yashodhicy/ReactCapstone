@@ -34,7 +34,7 @@ const Home = () => {
       <div className="events">
         {allEvents.map((event) => {
           return (
-            <Link to={`./country/${event.id}`} key={event.id}>
+            <Link to={`./event/${event.id}`} key={event.id}>
               <div
                 className="event"
                 key={event.name}

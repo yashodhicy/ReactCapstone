@@ -9,7 +9,7 @@ const Navigation = () => {
 
   if (location.pathname === "/") {
     text = "Home";
-  } else if (location.pathname.startsWith("/country")) {
+  } else if (location.pathname.startsWith("/event/")) {
     text = "event details";
   }
 

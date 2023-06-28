@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useParams } from "react-router";
 import Filterdata from "./filterdata";
-import "./country.css";
+import "./event.css";
 
-const Country = () => {
+const Eventdetails = () => {
   const { id } = useParams();
   const allEvents = Filterdata();
   const selectedEvent = allEvents.find((event) => event.id === id);
@@ -37,4 +37,4 @@ const Country = () => {
   );
 };
 
-export default Country;
+export default Eventdetails;
