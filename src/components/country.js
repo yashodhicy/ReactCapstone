@@ -1,26 +1,40 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { FetchEvents } from '../redux/events/eventsSlice';
-import { useParams } from 'react-router';
-import Filterdata from './filterdata';
-
+import React, { useEffect } from "react";
+import { useParams } from "react-router";
+import Filterdata from "./filterdata";
+import "./country.css";
 
 const Country = () => {
-    const {id} = useParams();
-    const allEvents = Filterdata();
-    const selectedEvent = allEvents.find((event) => event.id === id);
+  const { id } = useParams();
+  const allEvents = Filterdata();
+  const selectedEvent = allEvents.find((event) => event.id === id);
 
   return (
-    <><img src={selectedEvent?.image} alt="event" height={200} width='100%' />
-    <p>{selectedEvent?.name}</p>
-    <p>{selectedEvent?.date}</p>
-    <p>{selectedEvent?.price}</p>
-    <p>{selectedEvent?.info}</p>
-    <p>{selectedEvent?.visit}</p>
+    <>
+      <div>
+        <img src={selectedEvent?.image} alt="event" height={200} width="100%" />
+        <div className="image-overlay1"></div>
+      </div>
+      <div>
+        <ul className="list">
+          <li>{selectedEvent?.name}</li>
+          <li>genre:{" "}{selectedEvent?.genre}</li>
+          <li>date: {selectedEvent?.date}</li>
+          <li>time: {selectedEvent?.time}</li>
+          <li>timezone: {selectedEvent?.timeZone}</li>
+          <li>ticket Price: {selectedEvent?.price}</li>
+          <li>venue : {selectedEvent?.venue}</li>
+          <li>
+            {selectedEvent
+              ? selectedEvent.info1 ||
+                selectedEvent.info2
+              : "No event information available"}
+          </li>
+          
+          <li>more-info visit : {selectedEvent?.visit}</li>
+        </ul>
+      </div>
     </>
-
-  )
-    
+  );
 };
 
 export default Country;

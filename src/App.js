@@ -5,7 +5,7 @@ import Home from './components/home';
 import Country from './components/country';
 function App() {
   return (
-    <div>
+    <div id='main'>
      <Navigation />
      <Routes>
       <Route exact path="/" Component={Home}/>
