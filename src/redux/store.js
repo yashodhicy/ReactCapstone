@@ -1,11 +1,10 @@
-import { configureStore } from "@reduxjs/toolkit";
-import eventsSliceReducer from "./events/eventsSlice";
+import { configureStore } from '@reduxjs/toolkit';
+import eventsSliceReducer from './events/eventsSlice';
 
-const store = configureStore ({
-    reducer: {
-      events: eventsSliceReducer,
-    }
-})
-
+const store = configureStore({
+  reducer: {
+    events: eventsSliceReducer,
+  },
+});
 
 export default store;

@@ -1,57 +1,59 @@
 :root {
-    --white :  white;
-    --background: #EC4C8A;
-    --background-image :#FB5293;
-    --overlay-events : #DF4782;
+  --white: white;
+  --background: #ec4c8a;
+  --background-image: #fb5293;
+  --overlay-events: #df4782;
 }
+
 .image-container {
-    position: relative;
-    width: 100%;
-    height: 200px;
-    margin-top: 2rem;
+  position: relative;
+  width: 100%;
+  height: 200px;
+  margin-top: 2rem;
 }
+
 .image {
-    position: relative;
-    width: 100%;
-    height: 200px;
-  }
-  
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
 .image-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--background-image);
-    opacity: 0.9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-image);
+  opacity: 0.9;
 }
 
 .divider {
-    height:1rem;
-    margin: 0;
-    padding: 0.5rem 0;
+  height: 1rem;
+  margin: 0;
+  padding: 0.5rem 0;
 }
+
 /* events styling */
 
 .events {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap:0;
-    height: 100%
-  }
-  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  height: 100%;
+}
+
 .event {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    width: 100%;
-    height: 100%;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
 }
 
 a {
-    text-decoration: none;
-    color:var(--white);
-    font-family: lato,sans-serif;
+  text-decoration: none;
+  color: var(--white);
+  font-family: lato, sans-serif;
 }

@@ -1,11 +1,11 @@
 
 body {
- background-color: var(--background) ;
- font-family: 'Gill Sans', sans-serif;
- color: var(--white);
- text-decoration: none;
+  background-color: var(--background);
+  font-family: 'Gill Sans', sans-serif;
+  color: var(--white);
+  text-decoration: none;
 }
 
 #main {
-    height: 100%;
+  height: 100%;
 }
