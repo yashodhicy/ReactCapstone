@@ -9,7 +9,7 @@ function App() {
      <Navigation />
      <Routes>
       <Route exact path="/" Component={Home}/>
-      <Route path="/country" Component={Country} />
+      <Route path="/country/:id" Component={Country} />
      </Routes>
     </div>
   )
