@@ -4,7 +4,7 @@ export const FetchEvents = createAsyncThunk(
   'Country/FetchEvents',
 
   async (_, thunkAPI) => {
-    const url = 'https://app.ticketmaster.com/discovery/v2/events.json?size=6&countryCode=CA&classificationName=Professional&apikey=7KBAIQZR5JiH4pE3CMdHPToUvYySPND8';
+    const url = 'https://app.ticketmaster.com/discovery/v2/events.json?size=12&countryCode=CA&classificationName=Professional&apikey=7KBAIQZR5JiH4pE3CMdHPToUvYySPND8';
     try {
       const resp = await fetch(url);
       return resp.json();

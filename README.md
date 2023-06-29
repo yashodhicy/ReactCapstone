@@ -63,7 +63,6 @@
 
 ## 🚀 Live Demo <a name="https://worldevents.netlify.app/"></a>
 
-
 - [[Live Demo Link](https://worldevents.netlify.app/)]
 
  -[[Video Presentation Link](https://drive.google.com/file/d/1Ffo2oY4h1P_3chOLN-yDSQJlsh9vq10G/view?usp=sharing)]
