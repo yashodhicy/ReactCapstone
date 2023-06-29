@@ -55,10 +55,10 @@ const Home = () => {
                 style={{
                   position: 'relative',
                   bottom: '0px',
-                  right: '0px',
+                  right: '10px',
                   color: 'white',
                   zIndex: 2,
-                  width: '70%',
+                  width: '75%',
                 }}
               >
                 <h4 style={{ textTransform: 'uppercase' }}>{event.name}</h4>
