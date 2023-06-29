@@ -49,6 +49,9 @@
   align-items: flex-end;
   width: 100%;
   height: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
 }
 
 a {
@@ -78,4 +81,23 @@ a {
 
 .search input::placeholder {
   color: var(--white);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(223, 71, 130, 0.9);
+  z-index: 1;
+}
+
+.event-details {
+  position: relative;
+  bottom: 0;
+  right: 10px;
+  color: white;
+  z-index: 2;
+  width: 75%;
 }

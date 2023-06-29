@@ -53,34 +53,14 @@ const Home = () => {
               className="event"
               key={event.name}
               style={{
-                position: 'relative',
                 backgroundImage: `url(${event.image})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
               }}
             >
               <div
                 className="overlay"
-                style={{
-                  position: 'absolute',
-                  top: 0,
-                  left: 0,
-                  width: '100%',
-                  height: '100%',
-                  backgroundColor: 'rgb(223, 71, 130, 0.9)',
-                  zIndex: 1,
-                }}
               />
               <article
                 className="event-details"
-                style={{
-                  position: 'relative',
-                  bottom: '0px',
-                  right: '10px',
-                  color: 'white',
-                  zIndex: 2,
-                  width: '75%',
-                }}
               >
                 <h4 style={{ textTransform: 'uppercase' }}>{event.name}</h4>
                 <p>{event.price}</p>
