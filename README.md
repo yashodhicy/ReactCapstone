@@ -61,7 +61,7 @@
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="https://drive.google.com/file/d/1Ajl6YYj82RQ-DxQ3N3guF29xGApf8BSz/view?usp=sharing"></a>
+## 🚀 Live Demo <a name="https://worldevents.netlify.app/"></a>
 
 
 - [[Live Demo Link](https://worldevents.netlify.app/)]
@@ -124,7 +124,7 @@ To run tests, run the following command:
 
 ### Deployment
 
-- [[App Link](https://worldevents.netlify.app/")]
+- [[App Link](https://worldevents.netlify.app/)]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
