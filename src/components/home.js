@@ -1,19 +1,22 @@
 import { Link } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import worldImage from '../images/world.png';
 import { FetchEvents } from '../redux/events/eventsSlice';
+
 import Filterdata from './filterdata';
 import './home.css';
 
 const Home = () => {
   const dispatch = useDispatch();
+  const eventsLoaded = useSelector((state) => state.events.events.length > 0);
   useEffect(() => {
-    dispatch(FetchEvents());
-  }, []);
-
-  const allEvents = Filterdata();
-  console.log(allEvents);
+    if (!eventsLoaded) {
+      dispatch(FetchEvents());
+    }
+  }, [dispatch, eventsLoaded]);
+  const data = useSelector((state) => state.events.events);
+  const allEvents = Filterdata(data);
 
   return (
     <>

@@ -1,11 +1,13 @@
 import React from 'react';
 import { useParams } from 'react-router';
+import { useSelector } from 'react-redux';
 import Filterdata from './filterdata';
 import './event.css';
 
 const Eventdetails = () => {
   const { id } = useParams();
-  const allEvents = Filterdata();
+  const data = useSelector((state) => state.events.events);
+  const allEvents = Filterdata(data);
   const selectedEvent = allEvents.find((event) => event.id === id);
 
   return (
