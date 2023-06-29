@@ -63,9 +63,11 @@
 
 ## 🚀 Live Demo <a name="https://worldevents.netlify.app/"></a>
 
-- [[Live Demo Link](https://worldevents.netlify.app/)]
 
- -[[Video Presentation Link](https://drive.google.com/file/d/1Ffo2oY4h1P_3chOLN-yDSQJlsh9vq10G/view?usp=sharing)]
+- [[Live Demo](https://worldevents.netlify.app/)]
+
+
+ -[[Video Presentation](https://drive.google.com/file/d/1Ffo2oY4h1P_3chOLN-yDSQJlsh9vq10G/view?usp=sharing)]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -123,7 +125,7 @@ To run tests, run the following command:
 
 ### Deployment
 
-- [[App Link](https://worldevents.netlify.app/")]
+- [[App Link](https://worldevents.netlify.app/)]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
