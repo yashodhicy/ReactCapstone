@@ -1,0 +1,23 @@
+.image-overlay1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 13.5rem;
+  background-color: var(--background-image);
+  opacity: 0.9;
+}
+
+.list {
+  padding: 0;
+}
+
+.list li {
+  list-style: none;
+  padding: 1rem 0.5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0 1px 3px -1px;
+}
+
+.list li:nth-child(even) {
+  background-color: var(--overlay-events);
+}
