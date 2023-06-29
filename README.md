@@ -123,7 +123,7 @@ To run tests, run the following command:
 
 ### Deployment
 
-- [[App Link](https://worldevents.netlify.app/)]
+- [[App Link](https://worldevents.netlify.app/")]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
