@@ -3,6 +3,7 @@ import mockApiResponse from './mockapiresponse';
 
 describe('test filter data', () => {
   it('should filters data', () => {
+    // eslint-disable-next-line no-underscore-dangle
     const data = mockApiResponse._embedded.events;
     const expectedoutput = [
       {

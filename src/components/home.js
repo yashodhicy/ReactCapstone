@@ -9,12 +9,14 @@ import './home.css';
 
 const Home = () => {
   const dispatch = useDispatch();
+  const eventsLoaded = useSelector((state) => state.events.events.length > 0);
   useEffect(() => {
-    dispatch(FetchEvents());
-  }, []);
+    if (!eventsLoaded) {
+      dispatch(FetchEvents());
+    }
+  }, [dispatch, eventsLoaded]);
   const data = useSelector((state) => state.events.events);
   const allEvents = Filterdata(data);
-  console.log(allEvents);
 
   return (
     <>

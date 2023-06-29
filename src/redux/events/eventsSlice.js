@@ -33,7 +33,6 @@ const EventSlice = createSlice({
         state.isLoading = false;
         // eslint-disable-next-line no-underscore-dangle
         const data = action.payload._embedded.events;
-        console.log(data);
         state.events = data;
       })
       .addCase(FetchEvents.rejected, (state) => {

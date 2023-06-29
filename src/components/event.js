@@ -1,8 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router';
+import { useSelector } from 'react-redux';
 import Filterdata from './filterdata';
 import './event.css';
-import { useSelector } from 'react-redux';
 
 const Eventdetails = () => {
   const { id } = useParams();
