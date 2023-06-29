@@ -1,7 +1,5 @@
-import { useSelector } from 'react-redux';
-
-const Filterdata = () => {
-  const data = useSelector((state) => state.events.events);
+const Filterdata = (data) => {
+  
   return data.map((event) => ({
     id: event.id,
     name: event.name,

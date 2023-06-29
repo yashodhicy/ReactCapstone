@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import worldImage from '../images/world.png';
 import { FetchEvents } from '../redux/events/eventsSlice';
+import { useSelector } from 'react-redux';
 import Filterdata from './filterdata';
 import './home.css';
 
@@ -11,8 +12,8 @@ const Home = () => {
   useEffect(() => {
     dispatch(FetchEvents());
   }, []);
-
-  const allEvents = Filterdata();
+  const data = useSelector((state) => state.events.events);
+  const allEvents = Filterdata(data);
   console.log(allEvents);
 
   return (
