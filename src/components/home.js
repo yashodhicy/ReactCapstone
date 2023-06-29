@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import worldImage from '../images/world.png';
 import { FetchEvents } from '../redux/events/eventsSlice';
-import { useSelector } from 'react-redux';
+
 import Filterdata from './filterdata';
 import './home.css';
 

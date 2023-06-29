@@ -3,6 +3,7 @@ import { useParams } from 'react-router';
 import Filterdata from './filterdata';
 import './event.css';
 import { useSelector } from 'react-redux';
+
 const Eventdetails = () => {
   const { id } = useParams();
   const data = useSelector((state) => state.events.events);
