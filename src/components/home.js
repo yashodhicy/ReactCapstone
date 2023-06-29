@@ -23,14 +23,12 @@ const Home = () => {
   const handleSearchInputChange = (event) => {
     const inputValue = event.target.value;
     const formattedValue = inputValue
-    .toLowerCase()
-    .replace(/(?:^|\s)\w/g, (match) => match.toUpperCase());
+      .toLowerCase()
+      .replace(/(?:^|\s)\w/g, (match) => match.toUpperCase());
     setSearchQuery(formattedValue);
   };
 
-  const filteredEvents = allEvents.filter((event) =>
-    event.name.includes(searchQuery)
-  );
+  const filteredEvents = allEvents.filter((event) => event.name.includes(searchQuery));
 
   return (
     <>
