@@ -1,9 +1,8 @@
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import worldImage from '../images/world.png';
 import { FetchEvents } from '../redux/events/eventsSlice';
-
 import Filterdata from './filterdata';
 import './home.css';
 
@@ -15,8 +14,23 @@ const Home = () => {
       dispatch(FetchEvents());
     }
   }, [dispatch, eventsLoaded]);
+
   const data = useSelector((state) => state.events.events);
   const allEvents = Filterdata(data);
+
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const handleSearchInputChange = (event) => {
+    const inputValue = event.target.value;
+    const formattedValue = inputValue
+    .toLowerCase()
+    .replace(/(?:^|\s)\w/g, (match) => match.toUpperCase());
+    setSearchQuery(formattedValue);
+  };
+
+  const filteredEvents = allEvents.filter((event) =>
+    event.name.includes(searchQuery)
+  );
 
   return (
     <>
@@ -24,10 +38,17 @@ const Home = () => {
         <img src={worldImage} alt="world" className="image" />
         <div className="image-overlay" />
       </div>
-      <p className="divider">Details by event</p>
+      <p className="search">
+        <input
+          type="text"
+          placeholder="Search events"
+          value={searchQuery}
+          onChange={handleSearchInputChange}
+        />
+      </p>
       <div className="events">
-        {allEvents.map((event) => (
-          <Link to={`./event/${event.id}`} key={event.id}>
+        {filteredEvents.map((event) => (
+          <Link to={`./event/${event.id}`} key={event.name}>
             <div
               className="event"
               key={event.name}

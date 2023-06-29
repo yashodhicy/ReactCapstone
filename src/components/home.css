@@ -40,7 +40,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0;
-  height: 100%;
 }
 
 .event {
@@ -56,4 +55,27 @@ a {
   text-decoration: none;
   color: var(--white);
   font-family: lato, sans-serif;
+}
+
+.search {
+  margin: 0.25rem 0;
+  padding: 0;
+  height: 1.5rem;
+}
+
+.search input {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background-color: var(--background);
+  border: 2px solid var(--overlay-events);
+  color: var(--white);
+}
+
+.search input:focus {
+  border: 2px solid white;
+}
+
+.search input::placeholder {
+  color: var(--white);
 }
